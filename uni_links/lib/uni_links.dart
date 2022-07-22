@@ -17,22 +17,6 @@ Future<Uri?> getInitialUri() async {
   return Uri.parse(link);
 }
 
-/// Returns a [Future], which completes to the initially stored link, which
-/// may be null.
-Future<String?> getLatestLink() => UniLinksPlatform.instance.getLatestLink();
-
-
-/// A convenience method that returns the initially stored link
-/// as a new [Uri] object.
-///
-/// If the link is not valid as a URI or URI reference,
-/// a [FormatException] is thrown.
-Future<Uri?> getLatestUri() async {
-  final link = await getLatestLink();
-  if (link == null) return null;
-  return Uri.parse(link);
-}
-
 /// A broadcast stream for receiving incoming link change events.
 ///
 /// The [Stream] emits opened links as [String]s.

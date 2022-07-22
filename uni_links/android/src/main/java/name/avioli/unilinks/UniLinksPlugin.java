@@ -38,15 +38,6 @@ public class UniLinksPlugin
 
         initialLink = dataString;
         if (changeReceiver != null) changeReceiver.onReceive(context, intent);
-        // if (Intent.ACTION_VIEW.equals(action)) {
-        //     initialLink = dataString;
-        //     // if (initialIntent) {
-        //     //     initialLink = dataString;
-        //     //     initialIntent = false;
-        //     // }
-        //     latestLink = dataString;
-        //     if (changeReceiver != null) changeReceiver.onReceive(context, intent);
-        // }
     }
 
     @NonNull
