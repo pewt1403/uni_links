@@ -30,7 +30,6 @@ public class UniLinksPlugin
     private String initialLink;
     private String latestLink;
     private Context context;
-    private boolean initialIntent = true;
 
     private void handleIntent(Context context, Intent intent) {
         String action = intent.getAction();

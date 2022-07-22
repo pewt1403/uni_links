@@ -38,14 +38,6 @@ abstract class UniLinksPlatform extends PlatformInterface {
   Future<String?> getInitialLink() => throw UnimplementedError(
       'getInitialLink() has not been implemented on the current platform.');
 
-  
-  /// Returns a [Future], which completes to the initially stored link, which
-  /// may be null.
-  ///
-  /// NOTE: base code found in [MethodChannelUniLinks.getInitialLink]
-  Future<String?> getLatestLink() => throw UnimplementedError(
-      'getInitialLink() has not been implemented on the current platform.');
-
   /// A broadcast stream for receiving incoming link change events.
   ///
   /// The [Stream] emits opened links as [String]s.

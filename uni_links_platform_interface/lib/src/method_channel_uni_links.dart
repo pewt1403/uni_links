@@ -9,11 +9,6 @@ class MethodChannelUniLinks extends UniLinksPlatform {
   Future<String?> getInitialLink() =>
       _mChannel.invokeMethod<String?>('getInitialLink');
 
- 
-  @override
-  Future<String?> getLatestLink() =>
-      _mChannel.invokeMethod<String?>('getLatestLink');
-
   @override
   late final Stream<String?> linkStream = _eChannel
       .receiveBroadcastStream()
